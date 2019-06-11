@@ -54,7 +54,7 @@ If pay-rate <= 25.00 && hours-worked <= 60
 			else
 		IF hours-worked > 35
 			Set weekly-pay = pay-rate * 35
-			Set overtime-hours = hours-worked - 35 * (pay-rate * 1.5)
+			Set overtime-hours = (hours-worked - 35) * (pay-rate * 1.5)
 			Set weekly-pay += overtime-hours
 		ENDIF
 	ENDIF
