@@ -9,19 +9,19 @@ Declare an empty double variable for total
 P(Process)
 If tax-code = 0 
 	then 
-		sales-tax variable = 0
+		Set sales-tax variable = 0
 	else 
 if tax-code = 1
 	then
-		sales-tax variable = 0.03 * purchase-amount
+		Set sales-tax variable = 0.03 * purchase-amount
 	else 
 If tax-code = 2 
 	then 
-		sales-tax variable = 0.05 * purchase-amount
+		Set sales-tax variable = 0.05 * purchase-amount
 	else 
 If tax-code = 3 
 	then 
-		sales-tax variable = 0.07 * purcahse-amount
+		Set sales-tax variable = 0.07 * purchase-amount
 			ENDIF
 		ENDIF
 	ENDIF
@@ -48,21 +48,23 @@ P
 If pay-rate <= 25.00 && hours-worked <= 60
 	then
 		Set Weekly Pay to pay-rate * hours-worked
+ENDIF
 
 
 O
 If pay-rate <= 25.00 && hours-worked <= 60
 	then
-		Output pay-rate && hours-worked && Weekly Pay Variable
+		Print pay-rate && hours-worked && Weekly Pay Variable
 	else
 		IF pay-rate > 25.00 && hours-worked > 60
 	then
-		Output pay-rate, hours-worked, too-many-hours, and rate-too-high variables
+		Print pay-rate, hours-worked, too-many-hours, and rate-too-high variables
 	else
 		IF pay-rate > 25.00 
 	then 
-		Output pay-rate && rate-too-high variable
+		Print pay-rate && rate-too-high variable
 	else 
 		IF hours-worked > 60
-	then Output hours-worked variable && too-many-hours variable
-
+	then 
+		Print hours-worked variable && too-many-hours variable
+ENDIF
