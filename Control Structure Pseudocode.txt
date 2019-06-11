@@ -46,14 +46,18 @@ Declare String too-many-hours
 Declare String pay-too-high
 
 P
-If pay-rate <= 25.00 && hours-worked <= 35
-	then
-		Set weekly-pay = pay-rate * hours-worked
+If pay-rate <= 25.00 && hours-worked <= 60
 		NESTEDIF
+		IF hours-worked <= 35
+			then 
+				Set weekly-pay = pay-rate * hours-worked
+			else
 		IF hours-worked > 35
+			Set weekly-pay = pay-rate * 35
 			Set overtime-hours = hours-worked - 35 * (pay-rate * 1.5)
 			Set weekly-pay += overtime-hours
-	
+		ENDIF
+	ENDIF
 ENDIF
 
 
