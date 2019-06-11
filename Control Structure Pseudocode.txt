@@ -2,7 +2,7 @@
 I(Input)
 Declare String customer-name
 Declare Double purchase-amount
-Declare Char tax-code
+Declare int tax-code
 Declare an empty double sales-tax
 Declare an empty double total
 
