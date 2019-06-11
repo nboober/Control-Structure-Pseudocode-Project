@@ -74,10 +74,7 @@ IF pay-rate > 25.00
 	then 
 		Print pay-rate && pay-too-high
 	else 
-IF hours-worked > 60
-	then 
 		Print hours-worked && too-many-hours
-			ENDIF
 		ENDIF
 	ENDIF
 ENDIF
