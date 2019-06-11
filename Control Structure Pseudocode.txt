@@ -47,7 +47,7 @@ Declare String pay-too-high
 P
 If pay-rate <= 25.00 && hours-worked <= 60
 	then
-		Set Weekly-pay to pay-rate * hours-worked
+		Set weekly-pay = pay-rate * hours-worked
 ENDIF
 
 
@@ -67,4 +67,7 @@ If pay-rate <= 25.00 && hours-worked <= 60
 		IF hours-worked > 60
 	then 
 		Print hours-worked && too-many-hours
+			ENDIF
+		ENDIF
+	ENDIF
 ENDIF
