@@ -29,10 +29,10 @@ ENDIF
 Set the total variable by adding the sales-tax variable to the purchase amount variable
 
 O(Output)
-Output the users name variable
-Output the purchase amount variable
-Output the Sales Tax Variable
-Output the total variable
+Print the users name variable
+Print the purchase amount variable
+Print the Sales Tax Variable
+Print the total variable
 
 
 2)
