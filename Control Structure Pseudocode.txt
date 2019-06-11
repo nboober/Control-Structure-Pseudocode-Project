@@ -1,10 +1,10 @@
 1)
 I(Input)
-Declare a String variable for the users name
-Declare a Double variable for the purchase amount
-Declare a Char variable for the tax code
-Declare an empty double Variable for sales tax
-Declare an empty double variable for total
+Declare String users-name
+Declare Double purchase-amount
+Declare Char tax-code
+Declare an empty double sales-tax
+Declare an empty double total
 
 P(Process)
 If tax-code = 0 
@@ -26,45 +26,45 @@ If tax-code = 3
 		ENDIF
 	ENDIF
 ENDIF
-Set the total variable by adding the sales-tax variable to the purchase amount variable
+Set total by adding the sales-tax variable to purchase-amount 
 
 O(Output)
-Print the users name variable
-Print the purchase amount variable
-Print the Sales Tax Variable
-Print the total variable
+Print users-name
+Print purchase-amount
+Print sales-tax
+Print total
 
 
 2)
 I
-Declare an int variable for the employee's number
-Declare a double variable for the pay rate
-Declare an int variable for the hours worked in the week
-Declare a double variable for weekly pay
-Declare a String Message for too many hours worked
-Declare a String Message for too high a pay rate
+Declare int employee-number
+Declare double pay-rate
+Declare int hours-worked
+Declare double weekly-pay
+Declare String too-many-hours
+Declare String pay-too-high
 
 P
 If pay-rate <= 25.00 && hours-worked <= 60
 	then
-		Set Weekly Pay to pay-rate * hours-worked
+		Set Weekly-pay to pay-rate * hours-worked
 ENDIF
 
 
 O
 If pay-rate <= 25.00 && hours-worked <= 60
 	then
-		Print pay-rate && hours-worked && Weekly Pay Variable
+		Print pay-rate && hours-worked && weekly-pay
 	else
 		IF pay-rate > 25.00 && hours-worked > 60
 	then
-		Print pay-rate, hours-worked, too-many-hours, and rate-too-high variables
+		Print pay-rate, hours-worked, too-many-hours, and pay-too-high
 	else
 		IF pay-rate > 25.00 
 	then 
-		Print pay-rate && rate-too-high variable
+		Print pay-rate && pay-too-high
 	else 
 		IF hours-worked > 60
 	then 
-		Print hours-worked variable && too-many-hours variable
+		Print hours-worked && too-many-hours
 ENDIF
