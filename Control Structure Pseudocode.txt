@@ -1,6 +1,6 @@
 1)
 I(Input)
-Declare String users-name
+Declare String customer-name
 Declare Double purchase-amount
 Declare Char tax-code
 Declare an empty double sales-tax
@@ -9,27 +9,27 @@ Declare an empty double total
 P(Process)
 If tax-code = 0 
 	then 
-		Set sales-tax variable = 0
+		Set sales-tax = 0
 	else 
 if tax-code = 1
 	then
-		Set sales-tax variable = 0.03 * purchase-amount
+		Set sales-tax = 0.03 * purchase-amount
 	else 
 If tax-code = 2 
 	then 
-		Set sales-tax variable = 0.05 * purchase-amount
+		Set sales-tax = 0.05 * purchase-amount
 	else 
 If tax-code = 3 
 	then 
-		Set sales-tax variable = 0.07 * purchase-amount
+		Set sales-tax = 0.07 * purchase-amount
 			ENDIF
 		ENDIF
 	ENDIF
 ENDIF
-Set total by adding the sales-tax variable to purchase-amount 
+Set total = sales-tax + purchase-amount 
 
 O(Output)
-Print users-name
+Print customer-name
 Print purchase-amount
 Print sales-tax
 Print total
