@@ -55,6 +55,10 @@ If pay-rate <= 25.00 && hours-worked <= 60
 	then
 		Output pay-rate && hours-worked && Weekly Pay Variable
 	else
+		IF pay-rate > 25.00 && hours-worked > 60
+	then
+		Output pay-rate, hours-worked, too-many-hours, and rate-too-high variables
+	else
 		IF pay-rate > 25.00 
 	then 
 		Output pay-rate && rate-too-high variable
