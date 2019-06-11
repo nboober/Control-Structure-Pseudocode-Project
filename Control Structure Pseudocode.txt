@@ -13,20 +13,20 @@ If tax-code = 0
 	else 
 if tax-code = 1
 	then
-		sales-tax variable = 0.03
+		sales-tax variable = 0.03 * purchase-amount
 	else 
 If tax-code = 2 
 	then 
-		sales-tax variable = 0.05
+		sales-tax variable = 0.05 * purchase-amount
 	else 
 If tax-code = 3 
 	then 
-		sales-tax variable = 0.07
+		sales-tax variable = 0.07 * purcahse-amount
 			ENDIF
 		ENDIF
 	ENDIF
 ENDIF
-Set the total variable by adding 1 to the sales-tax variable and multiplying that by the purchase amount variable
+Set the total variable by adding the sales-tax variable to the purchase amount variable
 
 O(Output)
 Output the users name variable
