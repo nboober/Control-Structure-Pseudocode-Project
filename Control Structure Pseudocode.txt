@@ -41,13 +41,19 @@ Declare int employee-number
 Declare double pay-rate
 Declare int hours-worked
 Declare double weekly-pay
+Declare int overtime-hours
 Declare String too-many-hours
 Declare String pay-too-high
 
 P
-If pay-rate <= 25.00 && hours-worked <= 60
+If pay-rate <= 25.00 && hours-worked <= 35
 	then
 		Set weekly-pay = pay-rate * hours-worked
+		NESTEDIF
+		IF hours-worked > 35
+			Set overtime-hours = hours-worked - 35 * (pay-rate * 1.5)
+			Set weekly-pay += overtime-hours
+	
 ENDIF
 
 
@@ -56,15 +62,15 @@ If pay-rate <= 25.00 && hours-worked <= 60
 	then
 		Print pay-rate && hours-worked && weekly-pay
 	else
-		IF pay-rate > 25.00 && hours-worked > 60
+IF pay-rate > 25.00 && hours-worked > 60
 	then
 		Print pay-rate, hours-worked, too-many-hours, and pay-too-high
 	else
-		IF pay-rate > 25.00 
+IF pay-rate > 25.00 
 	then 
 		Print pay-rate && pay-too-high
 	else 
-		IF hours-worked > 60
+IF hours-worked > 60
 	then 
 		Print hours-worked && too-many-hours
 			ENDIF
