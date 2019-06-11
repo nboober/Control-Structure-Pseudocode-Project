@@ -1,0 +1,64 @@
+1)
+I(Input)
+Declare a String variable for the users name
+Declare a Double variable for the purchase amount
+Declare a Char variable for the tax code
+Declare an empty double Variable for sales tax
+Declare an empty double variable for total
+
+P(Process)
+If tax-code = 0 
+	then 
+		sales-tax variable = 0
+	else 
+if tax-code = 1
+	then
+		sales-tax variable = 0.03
+	else 
+If tax-code = 2 
+	then 
+		sales-tax variable = 0.05
+	else 
+If tax-code = 3 
+	then 
+		sales-tax variable = 0.07
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+Set the total variable by adding 1 to the sales-tax variable and multiplying that by the purchase amount variable
+
+O(Output)
+Output the users name variable
+Output the purchase amount variable
+Output the Sales Tax Variable
+Output the total variable
+
+
+2)
+I
+Declare an int variable for the employee's number
+Declare a double variable for the pay rate
+Declare an int variable for the hours worked in the week
+Declare a double variable for weekly pay
+Declare a String Message for too many hours worked
+Declare a String Message for too high a pay rate
+
+P
+If pay-rate <= 25.00 && hours-worked <= 60
+	then
+		Set Weekly Pay to pay-rate * hours-worked
+
+
+O
+If pay-rate <= 25.00 && hours-worked <= 60
+	then
+		Output pay-rate && hours-worked && Weekly Pay Variable
+	else
+		IF pay-rate > 25.00 
+	then 
+		Output pay-rate && rate-too-high variable
+	else 
+		IF hours-worked > 60
+	then Output hours-worked variable && too-many-hours variable
+
